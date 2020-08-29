@@ -17,9 +17,10 @@ from django.urls import include, path
 from rest_framework import routers
 
 from accounts.urls import router as account_router
-
+from workouts.urls import router as workouts_router
 router = routers.DefaultRouter()
 router.registry.extend(account_router.registry)
+router.registry.extend(workouts_router.registry)
 
 urlpatterns = [
     # Django admin, auth and docs routes

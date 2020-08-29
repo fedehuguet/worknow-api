@@ -1,6 +1,6 @@
 from rest_framework import routers
 
-from workouts.viewsets import .*
+from workouts.viewset import ExerciseViewSet, WorkoutViewSet, WorkoutPlanViewSet
 
 router = routers.DefaultRouter()
 router.register("exercises", ExerciseViewSet, basename="exercises")

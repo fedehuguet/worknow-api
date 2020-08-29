@@ -1,5 +1,5 @@
-from models.py import .*
-from workouts.serializers import .*
+from workouts.models import Exercise, WorkoutPlan, Workout
+from workouts.serializers import ExerciseSerializer, WorkoutSerializer, WorkoutPlanSerializer
 from rest_framework import viewsets
 
 
